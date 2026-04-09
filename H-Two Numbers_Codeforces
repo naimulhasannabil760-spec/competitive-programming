@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+void printCeilFloorRound(double a, double b) {
+    double result = a / b;
+
+    cout << "floor " << a << " / " << b << " = " << floor(result) << "\n";
+    cout << "ceil "  << a << " / " << b << " = " << ceil(result) << "\n";
+    cout << "round " << a << " / " << b << " = " << round(result) << "\n";
+}
+
+int main() {
+    double a, b;
+    cin >> a >> b;
+    printCeilFloorRound(a, b);
+}
